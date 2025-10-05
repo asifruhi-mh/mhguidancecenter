@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover upcoming events, workshops, and community gatherings at MH Guidance Center">
+    <meta name="keywords" content="events, workshops, community meetings, calendar, registration, free events">
+    <title>Events & Workshops - MH Guidance Center</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip to Content Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="index.html" class="brand-link">
+                        <img src="assets/logo.png" alt="MH Guidance Center Logo" class="brand-logo">
+                        <span class="brand-text">MH Guidance Center</span>
+                    </a>
+                </div>
+                
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="programs.html" class="nav-link">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="events.html" class="nav-link active" aria-current="page">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="volunteer.html" class="nav-link">Volunteer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item nav-cta">
+                        <a href="donate.html" class="nav-link btn-donate">Donate</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Events & Workshops</h1>
+                <p class="page-subtitle">Join us for educational workshops, community gatherings, and support group meetings</p>
+            </div>
+        </section>
+
+        <!-- Event Filter -->
+        <section class="event-filter" aria-labelledby="filter-heading">
+            <div class="container">
+                <h2 id="filter-heading" class="sr-only">Filter Events</h2>
+                <div class="filter-controls">
+                    <div class="filter-group">
+                        <label for="event-category" class="filter-label">Category:</label>
+                        <select id="event-category" class="filter-select">
+                            <option value="all">All Events</option>
+                            <option value="workshop">Workshops</option>
+                            <option value="support">Support Groups</option>
+                            <option value="community">Community Events</option>
+                            <option value="fundraising">Fundraising</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="event-month" class="filter-label">Month:</label>
+                        <select id="event-month" class="filter-select">
+                            <option value="all">All Months</option>
+                            <option value="october">October 2025</option>
+                            <option value="november">November 2025</option>
+                            <option value="december">December 2025</option>
+                        </select>
+                    </div>
+                    
+                    <button class="filter-reset btn btn-outline">Reset Filters</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Events -->
+        <section class="upcoming-events" aria-labelledby="upcoming-heading">
+            <div class="container">
+                <h2 id="upcoming-heading" class="section-title">Upcoming Events</h2>
+                
+                <div class="events-grid">
+                    <!-- Featured Event -->
+                    <article class="event-card featured" data-category="community" data-month="october">
+                        <div class="event-badge">Featured</div>
+                        <div class="event-image">
+                            <img src="assets/mental-health-fair.jpg" alt="Community Mental Health Fair" class="event-img">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <span class="event-category">Community Event</span>
+                                <span class="event-cost">Free</span>
+                            </div>
+                            <h3 class="event-title">Community Mental Health Fair</h3>
+                            <div class="event-details">
+                                <div class="event-datetime">
+                                    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                    <time datetime="2025-10-15T10:00">Saturday, October 15, 2025</time>
+                                </div>
+                                <div class="event-time">
+                                    <i class="fas fa-clock" aria-hidden="true"></i>
+                                    <span>10:00 AM - 3:00 PM</span>
+                                </div>
+                                <div class="event-location">
+                                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                    <span>Community Center Park</span>
+                                </div>
+                            </div>
+                            <p class="event-description">Join us for our annual community mental health fair featuring free health screenings, resource booths, activities for families, and information about mental health services.</p>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-primary">Register Now</a>
+                                <button class="btn btn-outline event-details-btn" data-event="mental-health-fair">More Details</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Workshop Event -->
+                    <article class="event-card" data-category="workshop" data-month="october">
+                        <div class="event-image">
+                            <img src="assets/parenting-workshop.jpg" alt="Positive Parenting Workshop" class="event-img">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <span class="event-category">Workshop</span>
+                                <span class="event-cost">$10</span>
+                            </div>
+                            <h3 class="event-title">Positive Parenting Workshop</h3>
+                            <div class="event-details">
+                                <div class="event-datetime">
+                                    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                    <time datetime="2025-10-22T18:00">Tuesday, October 22, 2025</time>
+                                </div>
+                                <div class="event-time">
+                                    <i class="fas fa-clock" aria-hidden="true"></i>
+                                    <span>6:00 PM - 8:00 PM</span>
+                                </div>
+                                <div class="event-location">
+                                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                    <span>MH Guidance Center</span>
+                                </div>
+                            </div>
+                            <p class="event-description">Learn effective parenting strategies, communication techniques, and how to create a positive home environment for children of all ages.</p>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-primary">Register</a>
+                                <button class="btn btn-outline event-details-btn" data-event="parenting-workshop">Details</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Support Group -->
+                    <article class="event-card" data-category="support" data-month="october">
+                        <div class="event-image">
+                            <img src="assets/grief-support.jpg" alt="Grief Support Group Meeting" class="event-img">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <span class="event-category">Support Group</span>
+                                <span class="event-cost">Free</span>
+                            </div>
+                            <h3 class="event-title">Grief Support Group</h3>
+                            <div class="event-details">
+                                <div class="event-datetime">
+                                    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                    <time datetime="2025-10-24T19:00">Every Thursday</time>
+                                </div>
+                                <div class="event-time">
+                                    <i class="fas fa-clock" aria-hidden="true"></i>
+                                    <span>7:00 PM - 8:30 PM</span>
+                                </div>
+                                <div class="event-location">
+                                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                    <span>Conference Room A</span>
+                                </div>
+                            </div>
+                            <p class="event-description">A safe space for individuals processing grief and loss. Share experiences, receive support, and learn coping strategies in a compassionate environment.</p>
+                            <div class="event-actions">
+                                <a href="contact.html" class="btn btn-primary">Join Group</a>
+                                <button class="btn btn-outline event-details-btn" data-event="grief-support">Details</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Financial Literacy Workshop -->
+                    <article class="event-card" data-category="workshop" data-month="november">
+                        <div class="event-image">
+                            <img src="assets/financial-workshop.jpg" alt="Financial Planning Workshop" class="event-img">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <span class="event-category">Workshop</span>
+                                <span class="event-cost">Free</span>
+                            </div>
+                            <h3 class="event-title">Financial Planning Basics</h3>
+                            <div class="event-details">
+                                <div class="event-datetime">
+                                    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                    <time datetime="2025-11-05T18:30">Tuesday, November 5, 2025</time>
+                                </div>
+                                <div class="event-time">
+                                    <i class="fas fa-clock" aria-hidden="true"></i>
+                                    <span>6:30 PM - 8:30 PM</span>
+                                </div>
+                                <div class="event-location">
+                                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                    <span>Training Room B</span>
+                                </div>
+                            </div>
+                            <p class="event-description">Learn budgeting fundamentals, debt management strategies, and how to start building your financial future with practical tools and resources.</p>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-primary">Register</a>
+                                <button class="btn btn-outline event-details-btn" data-event="financial-workshop">Details</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Fundraising Event -->
+                    <article class="event-card" data-category="fundraising" data-month="november">
+                        <div class="event-image">
+                            <img src="assets/hope-gala.jpg" alt="Annual Hope Gala" class="event-img">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <span class="event-category">Fundraising</span>
+                                <span class="event-cost">$75</span>
+                            </div>
+                            <h3 class="event-title">Annual Hope Gala</h3>
+                            <div class="event-details">
+                                <div class="event-datetime">
+                                    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                    <time datetime="2025-11-20T18:00">Saturday, November 20, 2025</time>
+                                </div>
+                                <div class="event-time">
+                                    <i class="fas fa-clock" aria-hidden="true"></i>
+                                    <span>6:00 PM - 10:00 PM</span>
+                                </div>
+                                <div class="event-location">
+                                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                    <span>Grand Ballroom Hotel</span>
+                                </div>
+                            </div>
+                            <p class="event-description">Our signature fundraising event featuring dinner, entertainment, silent auction, and inspiring stories from our community members.</p>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-primary">Buy Tickets</a>
+                                <button class="btn btn-outline event-details-btn" data-event="hope-gala">Details</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Wellness Workshop -->
+                    <article class="event-card" data-category="workshop" data-month="november">
+                        <div class="event-image">
+                            <img src="assets/mindfulness-workshop.jpg" alt="Mindfulness and Stress Reduction Workshop" class="event-img">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <span class="event-category">Workshop</span>
+                                <span class="event-cost">$15</span>
+                            </div>
+                            <h3 class="event-title">Mindfulness & Stress Reduction</h3>
+                            <div class="event-details">
+                                <div class="event-datetime">
+                                    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                    <time datetime="2025-11-28T14:00">Thursday, November 28, 2025</time>
+                                </div>
+                                <div class="event-time">
+                                    <i class="fas fa-clock" aria-hidden="true"></i>
+                                    <span>2:00 PM - 4:00 PM</span>
+                                </div>
+                                <div class="event-location">
+                                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                    <span>Wellness Studio</span>
+                                </div>
+                            </div>
+                            <p class="event-description">Discover mindfulness techniques, breathing exercises, and practical strategies for managing stress and anxiety in daily life.</p>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-primary">Register</a>
+                                <button class="btn btn-outline event-details-btn" data-event="mindfulness-workshop">Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-container">
+                    <button class="btn btn-outline load-more-btn">Load More Events</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Calendar -->
+        <section class="event-calendar" aria-labelledby="calendar-heading">
+            <div class="container">
+                <h2 id="calendar-heading" class="section-title">Event Calendar</h2>
+                
+                <!-- Calendar placeholder -->
+                <div class="calendar-container">
+                    <div class="calendar-placeholder">
+                        <div class="calendar-content">
+                            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                            <h3>Interactive Calendar</h3>
+                            <p>View all our events in a monthly calendar format</p>
+                            <p class="calendar-note">Calendar integration coming soon. For now, check our events list above or contact us for specific dates.</p>
+                            <a href="contact.html" class="btn btn-primary">Contact for Schedule</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-signup" aria-labelledby="newsletter-heading">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h2 id="newsletter-heading">Stay Updated</h2>
+                        <p>Subscribe to our newsletter to receive event notifications, program updates, and community news.</p>
+                    </div>
+                    
+                    <form class="newsletter-form" action="#" method="POST">
+                        <div class="form-group-inline">
+                            <label for="newsletter-email" class="sr-only">Email Address</label>
+                            <input type="email" id="newsletter-email" name="email" class="newsletter-input" placeholder="Enter your email address" required>
+                            <button type="submit" class="btn btn-primary newsletter-btn">Subscribe</button>
+                        </div>
+                        <p class="newsletter-privacy">We respect your privacy and never share your information.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Registration Info -->
+        <section class="registration-info" aria-labelledby="registration-heading">
+            <div class="container">
+                <h2 id="registration-heading" class="section-title">Registration Information</h2>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-user-plus" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="info-title">How to Register</h3>
+                        <p class="info-text">Most events require advance registration. Click the "Register" button on any event or call our office at (555) 123-4567.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-dollar-sign" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="info-title">Payment & Fees</h3>
+                        <p class="info-text">Many events are free. For fee-based workshops, payment is due at registration. Scholarships available for those in need.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-wheelchair" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="info-title">Accessibility</h3>
+                        <p class="info-text">All events are held in accessible locations. Please contact us if you need special accommodations or assistive services.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-baby" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="info-title">Childcare</h3>
+                        <p class="info-text">Free childcare is available for most workshops and support groups. Please indicate childcare needs when registering.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">MH Guidance Center</h3>
+                    <p class="footer-description">Supporting our community through comprehensive guidance and support services.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Follow us on Facebook">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Follow us on Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Follow us on Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Connect with us on LinkedIn">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#newsletter">Newsletter</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 123 Community Drive, Your City, ST 12345</p>
+                        <p><i class="fas fa-phone" aria-hidden="true"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope" aria-hidden="true"></i> info@mhguidancecenter.org</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 MH Guidance Center. All rights reserved. | 501(c)(3) Non-Profit Organization</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/events.js"></script>
+</body>
+</html>
